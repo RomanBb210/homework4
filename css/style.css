@@ -56,7 +56,7 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 img {
@@ -126,8 +126,22 @@ img {
 
 .header .contact-list {
     display: flex;
-    gap: 50px;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
+}
+
+.contact-item .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    fill: var(--primary-text-color);
+}
+
+.contact-item .contact:hover,
+.contact-item .contact:focus {
+    fill: var(--accent-color);
 }
 
 
@@ -311,8 +325,14 @@ img {
     display: block;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 }
 
+.team-icon-list-item:hover,
+.team-icon-list-item:focus {
+    fill: var(--color-white);
+    background-color: var(--accent-color);
+}
 
 .card {
     padding: 30px 0;
@@ -329,9 +349,10 @@ img {
     border-radius: 50%;
 }
 
-.team-icon-link: hover,
-.team-icon-link: focus {
-    color: var(--accent-color);
+.team-icon-link:hover,
+.team-icon-link:focus {
+    fill: var(--color-white);
+    background-color: var(--accent-color);
 }
 
 
@@ -368,6 +389,12 @@ img {
     border-radius: 4px;
 }
 
+.clients-item:hover,
+.clients-item:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
 .clients-link {
     display: flex;
     justify-content: center;
@@ -377,11 +404,11 @@ img {
     fill: var(--link-ikon-color);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, 
+.clients-link:focus{
     fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
 }
+
 
 
 .footer {
@@ -411,6 +438,12 @@ img {
 .address .link:hover,
 .address .link:focus {
     color: var(--accent-color);
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .address-list .contact {
@@ -448,8 +481,28 @@ img {
 }
 
 .join-item {
+    display: flex;
+    justify-content:center;
+    align-items: center;
     width: 44px;
     height: 44px;
+}
+
+.join-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--link-ikon-color);
 }
+
+.join-link:hover,
+.join-link:focus {
+    fill: var(--color-white);
+    background-color: var(--accent-color);
+}
+
+
