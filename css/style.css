@@ -67,6 +67,11 @@ img {
 
 /* header */
 
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     color: var(--accent-color);
     font-family: Raleway;
